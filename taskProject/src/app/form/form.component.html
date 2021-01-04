@@ -1,0 +1,13 @@
+<div class="col-sm-6">
+    <div class="formcss">
+<form ngNativeValidate #simpleForm="ngForm" (ngSubmit)="getuser(simpleForm.value)">
+    <label for="username">UserName</label><br>
+    <input type="text" ngModel class="form-control" name="username" placeholder="Enter Name" required ><br><br>
+    <label for="Email">Email</label><br>
+    <input type="email" ngModel class="form-control" name="Email" placeholder="Enter Email" required><br><br>
+    <label for="password">password</label><br>
+    <input type="password" required ngModel class="form-control" name="password" placeholder="Enter password" pattern=".{8,}"><br><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
